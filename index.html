@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vijayadurgadevi Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+body{
+  background:linear-gradient(135deg,#cfd9ff,#fbefff);
+  color:#333;
+  scroll-behavior:smooth;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#fff;
+  position:sticky;
+  top:0;
+  box-shadow:0 3px 15px rgba(0,0,0,.15);
+  z-index:100;
+}
+nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+nav h2{
+  color:#6a0dad;
+}
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:22px;
+}
+nav a{
+  text-decoration:none;
+  font-weight:600;
+  color:#333;
+}
+nav a:hover{
+  color:#6a0dad;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
+section h2{
+  color:#6a0dad;
+  margin-bottom:20px;
+  font-size:32px;
+}
+
+/* ===== HOME ===== */
+.home{
+  display:flex;
+  align-items:center;
+  gap:50px;
+}
+.home img{
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid #6a0dad;
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+.home h1{
+  font-size:40px;
+}
+.home p{
+  font-size:18px;
+  margin:15px 0;
+}
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  background:linear-gradient(45deg,#6a0dad,#4a6cf7);
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+.btn:hover{
+  opacity:0.9;
+}
+
+/* ===== CARDS ===== */
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:15px;
+  margin:18px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  transition:transform .3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+}
+
+/* ===== SKILLS ===== */
+.skill-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+.skill{
+  background:linear-gradient(45deg,#6a0dad,#4a6cf7);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:25px;
+  font-weight:600;
+}
+
+/* ===== PROJECTS ===== */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.project h3{
+  color:#6a0dad;
+  margin-bottom:10px;
+}
+
+/* ===== CONTACT ===== */
+.contact-info p{
+  margin:8px 0;
+  font-size:17px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#2c3e50;
+  color:#fff;
+  text-align:center;
+  padding:35px 20px;
+}
+footer i{
+  font-size:22px;
+  margin:0 12px;
+}
+footer a{
+  color:#fff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .home{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<nav>
+<h2>My Portfolio</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home">
+<div>
+<h1>Hi, I'm <span style="color:#6a0dad">Vijayadurgadevi</span></h1>
+<p>BSc Computer Science Student | Web Developer</p>
+<p>Passionate about building beautiful and functional websites.</p>
+<a class="btn" href="C:\Users\vijay\OneDrive\Desktop\index2.html\RESUMEvijaya.pdf" download>Download Resume</a>
+</div>
+<img src="C:\Users\vijay\Downloads\ppppp.jpeg" alt="Profile Photo">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+I am currently pursuing <b>B.Sc Computer Science</b> at
+<b>Aditya Degree College, Amalapuram</b>.
+I enjoy creating websites and learning new technologies.
+My goal is to become a professional software developer.I enjoy learning new technologies and building projects that solve real-world problems. I am dedicated, quick to learn, and eager to contribute to a team. I am a quick learner, self-motivated person, and I always try to improve my skills.I am always eager to learn new skills and grow professionally.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="card">
+<h3>Technical Skills</h3><br>
+<div class="skill-tags">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">Python</div>
+<div class="skill">C</div>
+<div class="skill">Java</div>
+<div class="skill">MySQL</div>
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<div class="card project">
+<h3>Student Management System</h3>
+<p>Python & MySQL based project to manage student records efficiently.</p>
+</div>
+
+<div class="card project">
+<h3>Portfolio Website</h3>
+<p>Personal responsive portfolio using HTML, CSS and JavaScript.</p>
+</div>
+
+<div class="card project">
+<h3>Calculator App</h3>
+<p>Simple calculator using JavaScript with interactive UI.</p>
+</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+
+<div class="card">
+<b>B.Sc Computer Science</b><br>
+Aditya Degree College (2023–2026)<br>
+CGPA: 8.3
+</div>
+
+<div class="card">
+<b>Intermediate</b><br>
+Sri Chaitanya Junior College<br>
+Percentage: 60.8%
+</div>
+
+<div class="card">
+<b>SSC</b><br>
+ZPPH School, Kamanagaruvu<br>
+Percentage: 85%
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+<div class="card contact-info">
+<p><b>Email:</b> vijayadurgarelangi4@gmail.com</p>
+<p><b>Phone:</b> +91 9014581278</p>
+<p><b>Location:</b> Andhra Pradesh, India</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Vijayadurgadevi</p><br>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="mailto:example@gmail.com"><i class="fas fa-envelope"></i></a>
+</footer>
+
+</body>
+</html>
